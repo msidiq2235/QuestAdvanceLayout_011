@@ -52,7 +52,21 @@ fun ActivitasPertama(modifier: Modifier){
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
             )
-        )
+        ){
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.padding(all = 10.dp)
+            ) {
+                val gambar = painterResource(id = R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(size = 100.dp)
+                        .padding(all = 5.dp)
+                )
 
+            }
+        }
     }
 }
