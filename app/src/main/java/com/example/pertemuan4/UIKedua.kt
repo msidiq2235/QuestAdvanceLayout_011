@@ -25,6 +25,9 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.List
+import androidx.compose.material.icons.filled.Settings
 
 @Composable
 fun UIKedua() {
@@ -85,7 +88,14 @@ fun UIKedua() {
             }
 
             Spacer(modifier = Modifier.height(32.dp))
-        }
+
+            Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
+                MenuItem(Icons.Default.Info, stringResource(R.string.privacy))
+                MenuItem(Icons.Default.List, stringResource(R.string.riwayat_transaksi))
+                MenuItem(Icons.Default.Settings, stringResource(R.string.pengaturan))
+            }
+
+            Spacer(modifier = Modifier.height(32.dp))        }
     }
 }
 
