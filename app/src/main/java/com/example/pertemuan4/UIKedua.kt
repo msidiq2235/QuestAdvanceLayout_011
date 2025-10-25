@@ -18,6 +18,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
+import androidx.annotation.DrawableRes
+import androidx.compose.foundation.clickable
 
 @Composable
 fun UIKedua() {
@@ -68,4 +70,16 @@ fun UIKedua() {
             Spacer(modifier = Modifier.height(24.dp))
         }
     }
+}
+
+@Composable
+fun SocialIconButton(@DrawableRes iconResId: Int, description: String) {
+    Image(
+        painter = painterResource(id = iconResId),
+        contentDescription = description,
+        modifier = Modifier
+            .size(40.dp)
+            .clip(CircleShape)
+            .clickable { }
+    )
 }
