@@ -20,9 +20,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             Pertemuan4Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ActivitasPertama(
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    //ActivitasPertama(
+                    //    modifier = Modifier.padding(innerPadding)
+                    //)
+                    UIKedua()
                 }
             }
         }
