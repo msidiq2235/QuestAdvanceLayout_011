@@ -20,6 +20,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.graphics.vector.ImageVector
 
 @Composable
 fun UIKedua() {
@@ -94,4 +96,23 @@ fun SocialIconButton(@DrawableRes iconResId: Int, description: String) {
             .clip(CircleShape)
             .clickable { }
     )
+}
+
+@Composable
+fun MenuItem(icon: ImageVector, text: String) {
+    Surface(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { },
+        shape = RoundedCornerShape(50),
+        color = MaterialTheme.colorScheme.surfaceVariant
+    ) {
+        Row(
+            modifier = Modifier.padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+
+        }
+    }
 }
