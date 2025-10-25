@@ -123,6 +123,12 @@ fun UIKedua() {
             }
 
             Spacer(modifier = Modifier.height(24.dp))
+
+            Text(
+                text = stringResource(R.string.copyright_new),
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                fontSize = 12.sp
+            )
         }
     }
 }
