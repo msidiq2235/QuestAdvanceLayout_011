@@ -68,6 +68,18 @@ fun UIKedua() {
             )
 
             Spacer(modifier = Modifier.height(24.dp))
+
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(16.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                SocialIconButton(R.drawable.icon_facebook, "Facebook")
+                SocialIconButton(R.drawable.icon_whatsapp, "Whatsapp")
+                SocialIconButton(R.drawable.icon_instagram, "Instagram")
+                SocialIconButton(R.drawable.icon_linkedin, "LinkedIn")
+            }
+
+            Spacer(modifier = Modifier.height(32.dp))
         }
     }
 }
