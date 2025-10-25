@@ -5,4 +5,13 @@
     <string name="prodi">Teknologi Informasi</string>
     <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
     <string name="copy">Copyright, 2025</string>
+
+    <string name="profile_name">Muhammad Sidiq</string>
+    <string name="profile_username">@msidiq</string>
+    <string name="profile_bio">Saya seorang Mahasiswa TI UMY</string>
+    <string name="privacy">Privacy</string>
+    <string name="riwayat_transaksi">Riwayat Transaksi</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="logout">Logout</string>
+    <string name="copyright_new">© 2025 Muhammad Sidiq</string>
 </resources>
